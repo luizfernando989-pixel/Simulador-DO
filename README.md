@@ -120,6 +120,3 @@ refactor: modularize HTML
 docs: add project README
 ```
 
-## Status
-
-Versão organizada para depósito no GitHub, com CSS e JavaScript separados do documento HTML.
