@@ -107,58 +107,188 @@
       .do-cell, .do-block-row { border-color: #000; }  
       ::-webkit-input-placeholder { color: transparent !important; }  
     }  
-    /* ===== Refinamento estético ===== */
+    /* ===== Refinamento estético — Tema Claro ===== */
     html { scroll-behavior: smooth; }
     body {
-      background:
-        radial-gradient(1200px 500px at 10% -10%, rgba(16,185,129,.14), transparent 60%),
-        radial-gradient(900px 500px at 100% 0%, rgba(99,102,241,.12), transparent 55%),
-        #0f172a;
+      background-color: #f1f5f9;
+      background-image:
+        radial-gradient(1100px 480px at 8% -12%, rgba(16,185,129,.10), transparent 60%),
+        radial-gradient(900px 460px at 100% -5%, rgba(99,102,241,.08), transparent 55%);
+      background-attachment: fixed;
+      color: #1e293b;
       -webkit-font-smoothing: antialiased;
     }
+
+    /* Cabeçalho */
+    header.text-slate-100 { color: #0f172a !important; }
     header.sticky {
-      background: rgba(15,23,42,.78) !important;
-      backdrop-filter: blur(14px) saturate(140%);
-      -webkit-backdrop-filter: blur(14px) saturate(140%);
-      border-bottom: 1px solid rgba(148,163,184,.18) !important;
-      box-shadow: 0 8px 30px -12px rgba(0,0,0,.6) !important;
+      background: rgba(255,255,255,.86) !important;
+      backdrop-filter: blur(14px) saturate(150%);
+      -webkit-backdrop-filter: blur(14px) saturate(150%);
+      border-bottom: 1px solid rgba(148,163,184,.35) !important;
+      box-shadow: 0 10px 30px -22px rgba(15,23,42,.5) !important;
     }
-    header h1 { letter-spacing: -.02em; }
+    header h1 { color: #0f172a !important; letter-spacing: -.02em; }
+    header .text-slate-100, header .text-slate-300 { color: #475569 !important; }
+    header .bg-emerald-800\/60 { background: #ecfdf5 !important; }
+    header .text-emerald-200 { color: #047857 !important; }
+    header .border-emerald-600 { border-color: #a7f3d0 !important; }
     header .bg-emerald-600:first-child, header div.w-9 {
       background: linear-gradient(135deg,#10b981,#047857) !important;
-      box-shadow: 0 6px 16px -4px rgba(16,185,129,.55), inset 0 1px 0 rgba(255,255,255,.3) !important;
+      box-shadow: 0 6px 16px -4px rgba(16,185,129,.45), inset 0 1px 0 rgba(255,255,255,.35) !important;
     }
-    button { transition: transform .15s ease, box-shadow .2s ease, background-color .2s ease, filter .2s ease; }
+    button { transition: transform .15s ease, box-shadow .2s ease, background-color .2s ease, filter .2s ease, color .2s ease; }
     button:hover { transform: translateY(-1px); }
     button:active { transform: translateY(0) scale(.98); }
+    header select { border-radius: 10px; }
+    #caseSelect {
+      background-color: #ffffff !important; color: #0f172a !important;
+      border-color: #cbd5e1 !important; box-shadow: 0 1px 2px rgba(15,23,42,.08) !important;
+    }
+    #caseSelect:focus { border-color: #10b981 !important; }
+    #caseSelect option { background: #ffffff; color: #0f172a; }
     header button.bg-emerald-600 {
       background: linear-gradient(135deg,#10b981,#059669) !important;
-      box-shadow: 0 6px 16px -6px rgba(16,185,129,.7);
+      box-shadow: 0 6px 16px -6px rgba(16,185,129,.6);
     }
-    header button.bg-emerald-600:hover { filter: brightness(1.1); }
-    header select { border-radius: 10px; background-color: rgba(30,41,59,.9); border-color: rgba(148,163,184,.3); }
-    header select:focus { border-color: #10b981; }
+    header button.bg-emerald-600:hover { filter: brightness(1.06); }
+    header button.bg-slate-600 { background: #f8fafc !important; color: #0f172a !important; border-color: #cbd5e1 !important; }
+    header button.bg-slate-600:hover { background: #f1f5f9 !important; }
+    header button.bg-rose-800\/40 { background: #ffe4e6 !important; color: #be123c !important; border-color: #fda4af !important; }
+    header button.bg-rose-800\/40:hover { background: #fecdd3 !important; }
+    header button.bg-indigo-800\/40 { background: #eef2ff !important; color: #4338ca !important; border-color: #c7d2fe !important; }
+    header button.bg-indigo-800\/40:hover { background: #e0e7ff !important; }
+
+    /* Abas do celular */
+    #mobileTabNav { background: rgba(255,255,255,.92) !important; border-top-color: #e2e8f0 !important; }
+    #mobileTabNav .mobile-tab-btn { background: #f8fafc; color: #334155; border-color: #cbd5e1; }
+    #mobileTabNav .mobile-tab-btn:hover { background: #f1f5f9; }
+    #mobileTabNav .mobile-tab-btn.active { background: #059669 !important; color: #ffffff !important; border-color: #059669 !important; }
+
+    /* Painéis laterais */
     aside > *, aside .rounded-xl, aside .rounded-lg { border-radius: 14px; }
-    aside { scrollbar-width: thin; scrollbar-color: #475569 transparent; }
-    .do-form-sheet {
-      border: 1px solid rgba(148,163,184,.25); border-radius: 14px; overflow: hidden;
-      box-shadow: 0 24px 50px -20px rgba(0,0,0,.65), 0 0 0 1px rgba(255,255,255,.03);
+    aside { scrollbar-width: thin; scrollbar-color: #cbd5e1 transparent; }
+    aside .bg-slate-700 { background: #ffffff !important; }
+    aside .bg-slate-800, aside .bg-slate-800\/50 { background: #f8fafc !important; }
+    aside .border-slate-500, aside .border-slate-600, aside .border-slate-700 { border-color: #e2e8f0 !important; }
+    aside .text-white, aside .text-slate-100, aside .text-slate-200 { color: #0f172a !important; }
+    aside .text-slate-300 { color: #475569 !important; }
+    aside .text-emerald-300, aside .text-emerald-400 { color: #047857 !important; }
+    aside .bg-emerald-800\/60 { background: #ecfdf5 !important; }
+    aside .text-emerald-200 { color: #047857 !important; }
+    aside .border-emerald-600 { border-color: #a7f3d0 !important; }
+    aside .text-amber-400 { color: #b45309 !important; }
+    aside .bg-amber-800\/40 { background: #fffbeb !important; }
+    aside .bg-amber-800\/60 { background: #fef3c7 !important; }
+    aside .text-amber-50, aside .text-amber-100 { color: #78350f !important; }
+    aside .border-amber-700\/50, aside .border-amber-600\/50 { border-color: #fde68a !important; }
+    aside .bg-sky-800\/30 { background: #f0f9ff !important; }
+    aside .border-sky-700\/50 { border-color: #bae6fd !important; }
+    aside .text-sky-300, aside .text-sky-200 { color: #0369a1 !important; }
+
+    /* Barra de seleção das vias */
+    .do-toolbar {
+      background: rgba(255,255,255,.9) !important; border-color: #e2e8f0 !important;
+      border-radius: 13px 13px 0 0; backdrop-filter: blur(8px);
     }
-    .do-side-tab { background: linear-gradient(180deg,#475569,#334155); }
+    .do-toolbar .text-slate-200 { color: #334155 !important; }
+    .do-toolbar .text-slate-300 { color: #64748b !important; }
+    .do-toolbar .text-white { color: #0f172a !important; }
+
+    /* Ficha (papel) */
+    .do-form-sheet {
+      border: 1px solid #cbd5e1; border-radius: 14px; overflow: hidden;
+      box-shadow: 0 24px 50px -26px rgba(15,23,42,.35), 0 2px 6px -2px rgba(15,23,42,.12);
+    }
+    .do-document-sheet { box-shadow: 0 30px 60px -30px rgba(15,23,42,.4); }
     .do-input { border-radius: 3px; transition: background-color .15s, box-shadow .15s; }
     .do-input:focus { background-color: rgba(16,185,129,.12); box-shadow: inset 0 -2px 0 #10b981; }
     .do-opt:hover { color: #047857; }
-    .med-stamp { box-shadow: 0 4px 10px -4px rgba(30,64,175,.35); }
-    .do-toolbar { border-radius: 12px; background: rgba(51,65,85,.7); backdrop-filter: blur(8px); }
-    .do-document-sheet { border-radius: 4px; box-shadow: 0 30px 60px -20px rgba(0,0,0,.7); }
+    .med-stamp { box-shadow: 0 4px 10px -4px rgba(30,64,175,.3); }
     .mobile-tab-btn { border-radius: 10px; }
+
+    /* Modal de auditoria */
+    #auditModal { background: rgba(15,23,42,.45) !important; }
+    #auditModal .bg-slate-700 { background: #ffffff !important; border-color: #e2e8f0 !important; }
+    #auditModal .bg-slate-800, #auditModal .bg-slate-800\/50 { background: #f8fafc !important; }
+    #auditModal .border-slate-600, #auditModal .border-slate-700 { border-color: #e2e8f0 !important; }
+    #auditModal .text-white:not(#auditIconScore), #auditModal .text-slate-50,
+    #auditModal .text-slate-100, #auditModal .text-slate-200 { color: #0f172a !important; }
+    #auditModal .text-slate-300 { color: #475569 !important; }
+    #auditModal .text-slate-400 { color: #64748b !important; }
+    #auditModal button.text-slate-400:hover { color: #0f172a !important; }
+    #auditModal .bg-emerald-900\/60, #auditModal .bg-emerald-900\/40 { background: #ecfdf5 !important; }
+    #auditModal .text-emerald-300, #auditModal .text-emerald-100, #auditModal .text-emerald-400 { color: #047857 !important; }
+    #auditModal .border-emerald-600, #auditModal .border-emerald-700 { border-color: #a7f3d0 !important; }
+    #auditModal .bg-amber-900\/60, #auditModal .bg-amber-900\/40 { background: #fffbeb !important; }
+    #auditModal .text-amber-300, #auditModal .text-amber-100, #auditModal .text-amber-400 { color: #b45309 !important; }
+    #auditModal .border-amber-600, #auditModal .border-amber-700 { border-color: #fde68a !important; }
+    #auditModal .bg-rose-900\/60, #auditModal .bg-rose-900\/40 { background: #fff1f2 !important; }
+    #auditModal .text-rose-300, #auditModal .text-rose-100, #auditModal .text-rose-400 { color: #be123c !important; }
+    #auditModal .border-rose-600, #auditModal .border-rose-700 { border-color: #fecdd3 !important; }
+    #auditModal .bg-sky-900\/40 { background: #f0f9ff !important; }
+    #auditModal .border-sky-700\/50 { border-color: #bae6fd !important; }
+    #auditModal .text-sky-200, #auditModal .text-sky-100 { color: #075985 !important; }
+    #auditModal button.bg-slate-600 { background: #f1f5f9 !important; color: #0f172a !important; }
+    #auditModal button.bg-slate-600:hover { background: #e2e8f0 !important; }
+
+    /* Barra de rolagem e seleção */
     ::-webkit-scrollbar { width: 10px; height: 10px; }
-    ::-webkit-scrollbar-thumb { background: #475569; border-radius: 10px; border: 2px solid #0f172a; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; border: 2px solid #f1f5f9; }
+    ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
     ::-webkit-scrollbar-track { background: transparent; }
-    ::selection { background: rgba(16,185,129,.4); }
+    ::-selection { background: rgba(16,185,129,.3); }
+
+    /* ===== Modernização: vidro translúcido + responsividade ===== */
+    body { background-attachment: fixed; }
+    header.sticky { transition: background .25s, box-shadow .25s, backdrop-filter .25s; }
+    header.sticky.is-scrolled {
+      background: rgba(255,255,255,.55) !important;
+      backdrop-filter: blur(22px) saturate(180%);
+      -webkit-backdrop-filter: blur(22px) saturate(180%);
+      box-shadow: 0 12px 34px -20px rgba(15,23,42,.45) !important;
+    }
+    #mobileTabNav { background: transparent !important; backdrop-filter: none; }
+    aside .bg-slate-700 {
+      background: rgba(255,255,255,.68) !important;
+      backdrop-filter: blur(16px) saturate(160%);
+      -webkit-backdrop-filter: blur(16px) saturate(160%);
+      border: 1px solid rgba(255,255,255,.7) !important;
+      box-shadow: 0 18px 40px -26px rgba(15,23,42,.35), inset 0 1px 0 rgba(255,255,255,.8);
+      border-radius: 18px !important;
+    }
+    .do-toolbar {
+      position: sticky; top: var(--hdr-h, 64px); z-index: 30;
+      background: rgba(255,255,255,.6) !important;
+      backdrop-filter: blur(18px) saturate(170%);
+      -webkit-backdrop-filter: blur(18px) saturate(170%);
+      border-radius: 16px !important; margin-bottom: 8px;
+      box-shadow: 0 10px 28px -20px rgba(15,23,42,.4);
+      flex-wrap: wrap; gap: 6px;
+    }
+    #auditModal { backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+    #auditModal .bg-slate-700 {
+      background: rgba(255,255,255,.82) !important;
+      backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+      border-radius: 20px !important;
+    }
+    @media (min-width: 1024px) {
+      #colAside { position: sticky; top: calc(var(--hdr-h, 64px) + 12px); max-height: calc(100vh - var(--hdr-h, 64px) - 24px); overflow-y: auto; padding-right: 2px; }
+    }
+    @media (max-width: 1023px) {
+      header.sticky { position: sticky; }
+      #mobileTabNav { position: sticky; }
+      main { padding-bottom: 24px; }
+    }
+    @media (max-width: 640px) {
+      header .flex-shrink-0, header .shrink-0 { flex-wrap: wrap; }
+      header .shrink-0 button { flex: 1 1 auto; }
+      #auditModal > div { max-height: 92vh; }
+    }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
   </style>  
 </head>  
-<body class="min-h-screen flex flex-col text-slate-100 bg-slate-800">  
+<body class="min-h-screen flex flex-col text-slate-800 bg-slate-100">  
   
   <!-- Header Suave Dark Mode -->  
   <header class="bg-slate-800 border-b border-slate-600 text-slate-100 sticky top-0 z-40 shadow-md">  
@@ -909,7 +1039,7 @@
           f_48_tipo: "", f_49_trabalho: "", f_50_fonte: "", f_51_descricao: "", f_52_logradouro: "",  
           f_53_cartorio: "", f_54_registro: "", f_55_data: "", f_56_municipio: "", f_57_uf: "", f_58_declarante: "", f_59_testemunha_a: "", f_59_testemunha_b: ""  
         },  
-        officialFeedback: "Correta hierarquia: o infarto e o choque são eventos consequenciais da aterosclerose subjacente (Condição Básica). Siglas foram evitadas no campo principal."  
+        officialFeedback: "Correta hierarquia: o infarto e o choque são eventos consequenciais da aterosclerose subjacente (Condição Básica que deve ocupar obrigatoriamente a linha d). Siglas foram evitadas no campo principal."  
       },  
       caso3: {  
         id: "caso3", tag: "CASO #3 - CAUSA EXTERNA / IML", title: "Idoso com 75 anos, queda doméstica e TCE",  
@@ -945,7 +1075,7 @@
           f_48_tipo: "1", f_49_trabalho: "2", f_50_fonte: "2", f_51_descricao: "QUEDA DA PROPRIA ALTURA EM RESIDENCIA COM TCE", f_52_logradouro: "",  
           f_53_cartorio: "", f_54_registro: "", f_55_data: "", f_56_municipio: "", f_57_uf: "", f_58_declarante: "", f_59_testemunha_a: "", f_59_testemunha_b: ""  
         },  
-        officialFeedback: "Morte por causa externa exige envio ao IML (médico = 3). A queda acidental originou toda a cascata do evento fatal, sendo ela a condição básica."  
+        officialFeedback: "Morte por causa externa exige envio ao IML (médico = 3). A queda acidental originou toda a cascata do evento fatal, sendo ela a condição básica que deve ser obrigatoriamente alocada na linha 'd'."  
       },  
       caso4: {  
         id: "caso4", tag: "CASO #4 - ÓBITO FETAL", title: "Natimorto com 32 semanas, DPP",  
@@ -972,16 +1102,16 @@
           f_31_gestacao: "4", f_32_gravidez: "1", f_33_parto: "1", f_34_morte_parto: "1", f_35_peso: "1800", f_36_dnv: "",  
           f_37_morte_mulher: "", f_38_assistencia: "1", f_39_necropsia: "2",  
           f_40_causa_a: "ANOXIA INTRAUTERINA GRAVE", f_40_tempo_a: "HORAS", f_40_cid_a: "P20.9",  
-          f_40_causa_b: "DESCOLAMENTO PREMATURO DE PLACENTA", f_40_tempo_b: "HORAS", f_40_cid_b: "P02.1",  
+          f_40_causa_b: "", f_40_tempo_b: "", f_40_cid_b: "",  
           f_40_causa_c: "", f_40_tempo_c: "", f_40_cid_c: "",  
-          f_40_causa_d: "", f_40_tempo_d: "", f_40_cid_d: "",  
+          f_40_causa_d: "DESCOLAMENTO PREMATURO DE PLACENTA", f_40_tempo_d: "HORAS", f_40_cid_d: "P02.1",  
           f_40_causa_p2: "", f_40_tempo_p2: "", f_40_cid_p2: "",  
           f_41_nome_medico: "DRA. HELENA MOURA", f_42_crm: "CRM-PE 99993", f_43_atendido: "1", f_44_municipio_iml: "",  
           f_45_contato: "(87) 99999-0004", f_46_data_atestado: "2026-09-17",  
           f_48_tipo: "", f_49_trabalho: "", f_50_fonte: "", f_51_descricao: "", f_52_logradouro: "",  
           f_53_cartorio: "", f_54_registro: "", f_55_data: "", f_56_municipio: "", f_57_uf: "", f_58_declarante: "", f_59_testemunha_a: "", f_59_testemunha_b: ""  
         },  
-        officialFeedback: "Em óbitos fetais (a partir de 20s ou 500g), o nome é NATIMORTO, o Bloco IV (dados maternos) deve ser completo e a causa principal reside em complicações gestacionais (Ex: DPP)."  
+        officialFeedback: "Em óbitos fetais (a partir de 20s ou 500g), o nome é NATIMORTO, o Bloco IV (dados maternos) deve ser completo. A causa principal (ovular/materna) deve figurar na Linha 'd' (Condição Básica)."  
       }  
     };  
   
@@ -1088,7 +1218,7 @@
       { regex: /parada\s+card/i, msg: "Garbage Code: Parada Cardiorrespiratória não é causa básica." },  
       { regex: /fal[eê]ncia\s+m[uú]ltipla|falencia\s+de\s+m[uú]ltiplos/i, msg: "Garbage Code: Falência de órgãos oculta a causa inicial." },  
       { regex: /^coma$|^coma\s/i, msg: "Garbage Code: Coma isolado não é causa de morte." },  
-      { regex: /\b(pcr|has|iam|dm|ave|avc|ira|fmo)\b/i, msg: "Evite siglas (PCR, IAM, HAS, etc). Use termos por extenso." }  
+      { regex: /\b(pcr|has|iam|dm|ave|avc|ira|fmo|tce|dpp|dac|hsa|aiu|pac|irpa)\b/i, msg: "Evite siglas (PCR, IAM, HAS, TCE, DPP, DAC, HSA, AIU, PAC, IRPA, etc). Use termos por extenso." }  
     ];  
   
     function checkRealtimeGarbage() {  
@@ -1144,6 +1274,9 @@
       const c = CASES[currentCaseKey];  
       let score = 100, items = [];  
       const v = c.validation;  
+      const d = c.idealData;  
+      // Normalizador para ignorar acentos e letras maiúsculas/minúsculas nas comparações  
+      const norm = (str) => (str || '').trim().toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, ' ');  
         
       const nome = document.getElementById("f_5_nome").value.trim().toUpperCase();  
       const sexo = document.getElementById("f_10_sexo").value;  
@@ -1201,10 +1334,21 @@
   
       // 5. Causas e Garbage (40)  
       const causaA = document.getElementById("f_40_causa_a").value.trim();  
+      const tempoA = document.getElementById("f_40_tempo_a").value.trim();  
+      const cidA = document.getElementById("f_40_cid_a").value.trim();  
       const causaB = document.getElementById("f_40_causa_b").value.trim();  
+      const tempoB = document.getElementById("f_40_tempo_b").value.trim();  
+      const cidB = document.getElementById("f_40_cid_b").value.trim();  
       const causaC = document.getElementById("f_40_causa_c").value.trim();  
+      const tempoC = document.getElementById("f_40_tempo_c").value.trim();  
+      const cidC = document.getElementById("f_40_cid_c").value.trim();  
       const causaD = document.getElementById("f_40_causa_d").value.trim();  
+      const tempoD = document.getElementById("f_40_tempo_d").value.trim();  
+      const cidD = document.getElementById("f_40_cid_d").value.trim();  
       const causaP2 = document.getElementById("f_40_causa_p2").value.trim();  
+      const tempoP2 = document.getElementById("f_40_tempo_p2").value.trim();  
+      const cidP2 = document.getElementById("f_40_cid_p2").value.trim();  
+  
       const causas = [causaA, causaB, causaC, causaD, causaP2].join(" ").toUpperCase();  
         
       let gb = false;  
@@ -1214,29 +1358,65 @@
       }  
   
       if (gb) {   
-        score -= 20; items.push({title: "5. Garbage Codes (40)", status: "error", msg: gbMsg});   
-      }  
-      else if (!causaA) {   
-        score -= 10; items.push({title: "5. Motivo Iminente", status: "error", msg: "A linha 'a' (causa imediata) é obrigatória."});   
+        score -= 20; items.push({title: "5. Garbage Codes / Siglas (40)", status: "error", msg: gbMsg});   
       }  
       else {  
-        let aOK = true, dOK = true;  
-        if(v.causaA_keywords) aOK = v.causaA_keywords.some(kw => causaA.toUpperCase().includes(kw));  
-        if(v.causaD_keywords) dOK = v.causaD_keywords.some(kw => causas.includes(kw));   
-          
-        if(!aOK || !dOK) {   
-          score -= 10; items.push({title: "5. Cadeia Causal Incoerente", status: "error", msg: "Diagnósticos não correspondem à fisiopatologia do caso clínico."});   
+        let errosCadeia = [];  
+  
+        const linhas = [  
+            { id: 'a', c: causaA, t: tempoA, i: cidA, expC: d.f_40_causa_a, expT: d.f_40_tempo_a, expI: d.f_40_cid_a, kws: v.causaA_keywords },  
+            { id: 'b', c: causaB, t: tempoB, i: cidB, expC: d.f_40_causa_b, expT: d.f_40_tempo_b, expI: d.f_40_cid_b, kws: v.causaB_keywords },  
+            { id: 'c', c: causaC, t: tempoC, i: cidC, expC: d.f_40_causa_c, expT: d.f_40_tempo_c, expI: d.f_40_cid_c, kws: v.causaC_keywords },  
+            { id: 'd', c: causaD, t: tempoD, i: cidD, expC: d.f_40_causa_d, expT: d.f_40_tempo_d, expI: d.f_40_cid_d, kws: v.causaD_keywords }  
+        ];  
+  
+        linhas.forEach(l => {  
+            if (l.expC) {   
+                if (!l.c) {  
+                    errosCadeia.push(`Falta preencher a doença na linha '${l.id}'.`);  
+                } else if (l.kws && l.kws.length > 0) {  
+                    const match = l.kws.some(kw => norm(l.c).includes(norm(kw)));  
+                    if (!match) {  
+                        errosCadeia.push(`Doença inadequada na linha '${l.id}'.`);  
+                    }  
+                }  
+                  
+                if (norm(l.t) !== norm(l.expT)) {  
+                    errosCadeia.push(`Tempo incorreto na linha '${l.id}'.`);  
+                }  
+                if (norm(l.i) !== norm(l.expI)) {  
+                    errosCadeia.push(`CID incorreto na linha '${l.id}'.`);  
+                }  
+            } else if (l.c) {  
+                 errosCadeia.push(`Linha '${l.id}' não deveria ser preenchida neste caso.`);  
+            }  
+        });  
+  
+        // Verificação adicional para garantir uso obrigatório da linha D nos casos 2, 3 e 4  
+        if ((currentCaseKey === "caso2" || currentCaseKey === "caso3" || currentCaseKey === "caso4") && !causaD) {  
+             if (!errosCadeia.includes(`Falta preencher a doença na linha 'd'.`)) {  
+                 errosCadeia.push("A Linha 'd' (Condição Básica) OBRIGATORIAMENTE deve ser utilizada neste caso.");  
+             }  
         }  
-        else {  
-          items.push({title: "5. Cadeia Causal", status: "ok", msg: "Sequência diagnóstica correta."});  
+  
+        if (d.f_40_causa_p2) {  
+             if (!causaP2) errosCadeia.push("Faltou preencher a Parte II (Outras condições).");  
+             else if (norm(cidP2) !== norm(d.f_40_cid_p2)) errosCadeia.push("CID da Parte II está incorreto.");  
+        }  
+  
+        if (errosCadeia.length > 0) {   
+          score -= 15;   
+          items.push({title: "5. Cadeia Causal Incoerente (40)", status: "error", msg: errosCadeia.join(" ")});   
+        } else if (!causaA) {   
+          score -= 10;   
+          items.push({title: "5. Motivo Iminente (40)", status: "error", msg: "A linha 'a' (causa imediata) é obrigatória."});   
+        } else {  
+          items.push({title: "5. Cadeia Causal (40)", status: "ok", msg: "Sequência diagnóstica na linha correta, CIDs e tempos validados."});  
         }  
       }  
   
       // 6. Identificação e Residência (Cruzamento Estrito de Dados)  
       let errosIdent = [];  
-      const d = c.idealData;  
-      // Normalizador para ignorar acentos e letras maiúsculas/minúsculas nas comparações  
-      const norm = (str) => (str || '').trim().toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");  
         
       const tipoObito = document.querySelector('input[name="f_1_tipo_obito"]:checked')?.value || "";  
       if (tipoObito !== d.f_1_tipo_obito) errosIdent.push("Tipo de Óbito (Fetal/Não Fetal)");  
@@ -1341,5 +1521,6 @@
   
     window.onload = () => loadCase("caso1");  
   </script>  
+<script>(function(){var h=document.querySelector('header.sticky');if(!h)return;function u(){document.documentElement.style.setProperty('--hdr-h',h.offsetHeight+'px');h.classList.toggle('is-scrolled',window.scrollY>8)}addEventListener('scroll',u,{passive:true});addEventListener('resize',u);addEventListener('load',u);u()})();</script>
 </body>  
-</html>  
+</html>
