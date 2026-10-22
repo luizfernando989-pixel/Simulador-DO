@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800; 900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -25,7 +25,7 @@
     .via-branca { background-color: #ffffff; border-color: #475569; }
     .via-amarela { background-color: #fefce8; border-color: #ca8a04; }
     .via-rosa { background-color: #fff1f2; border-color: #e11d48; }
-    
+
     .do-form-sheet {
       border: 2px solid #334155;
       box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
@@ -76,11 +76,12 @@
       background-color: #059669; color: #ffffff; font-weight: 800;
       box-shadow: 0 2px 5px rgba(5, 150, 105, 0.35); border-color: #059669;
     }
-    
+
     /* Proteções da Camada Visual da DO Impressa contra o Dark Mode externo */
     .do-toolbar { background: #334155; border-color: #475569; border-radius: 0; }
     .do-document-sheet {
-      color: #202020; font-family: Arial, Helvetica, sans-serif; border: 1.5px solid #232323;
+      color: #202020; font-family: Arial, Helvetica, sans-serif; border: 1.5px solid
+  #232323;
       border-radius: 0; box-shadow: 0 15px 35px rgba(0, 0, 0, .3); isolation: isolate;
     }
     .do-document-sheet .do-block-row { border-bottom-color: #303030; }
@@ -96,7 +97,8 @@
     }
     .do-chk-box {
       display: inline-flex; align-items: center; gap: 3px; font-size: 9px;
-      font-weight: 600; color: #1e293b; cursor: pointer; user-select: none; line-height: 1.2;
+      font-weight: 600; color: #1e293b; cursor: pointer; user-select: none; line-height:
+  1.2;
     }
     .do-chk-box input[type="radio"] {
       appearance: none; -webkit-appearance: none; width: 11px; height: 11px;
@@ -114,7 +116,8 @@
       display: flex; flex-direction: column; align-items: center; justify-content: center;
       font-size: 8px; font-weight: 700; color: #252525; line-height: 1.1; shrink: 0;
     }
-    .do-document-sheet .do-fnum { border: 0; border-radius: 0; margin-right: 2px; padding: 0; font-size: 8px; background: transparent; }
+    .do-document-sheet .do-fnum { border: 0; border-radius: 0; margin-right: 2px; padding:
+  0; font-size: 8px; background: transparent; }
     .do-document-sheet .do-flabel { color: #252525; font-size: 8px; font-weight: 700; letter-spacing: -.015em; }
     .do-document-sheet .do-input { color: #161616; font-family: 'Share Tech Mono', 'Courier New', monospace; font-size: 11px; line-height: 1.15; padding: 1px 0; }
     .do-document-sheet .do-input:focus { background: #fff5bf; box-shadow: inset 0 -1px 0 #555; }
@@ -165,7 +168,8 @@
       background: linear-gradient(135deg,#10b981,#047857) !important;
       box-shadow: 0 6px 16px -4px rgba(16,185,129,.45), inset 0 1px 0 rgba(255,255,255,.35) !important;
     }
-    button { transition: transform .15s ease, box-shadow .2s ease, background-color .2s ease, filter .2s ease, color .2s ease; }
+    button { transition: transform .15s ease, box-shadow .2s ease, background-color .2s
+  ease, filter .2s ease, color .2s ease; }
     button:hover { transform: translateY(-1px); }
     button:active { transform: translateY(0) scale(.98); }
     header select { border-radius: 10px; }
@@ -363,10 +367,10 @@
 
   <main class="max-w-7xl mx-auto w-full p-2.5 sm:p-4 flex-1 grid grid-cols-1 lg:grid-cols-12 gap-4 items-start">
     <aside id="colAside" class="w-full lg:col-span-4 space-y-3.5">
-      
+
       <!-- Prontuário Panel Dim -->
       <div id="sectionProntuario" class="bg-slate-700 border border-slate-600 rounded-xl p-3.5 sm:p-4 shadow-lg text-slate-100">
-        <div class="flex items-center justify-between border-b border-slate-500 pb-2.5 mb-2.5">
+        <div class="flex items-center justify-between border-b border-slate-500 pb-2.5 mb-2. 5">
           <div class="flex items-center gap-2">
             <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
             <h2 class="font-extrabold text-sm text-white uppercase tracking-wide">Prontuário do Paciente</h2>
@@ -381,7 +385,7 @@
       </div>
 
       <!-- Checklist Panel Dim -->
-      <div id="sectionChecklist" class="bg-slate-700 border border-slate-600 rounded-xl p-3.5 sm:p-4 shadow-lg">
+      <div id="sectionChecklist" class="bg-slate-700 border border-slate-600 rounded-xl p-3. 5 sm:p-4 shadow-lg">
         <h3 class="font-extrabold text-xs sm:text-sm text-amber-400 uppercase tracking-wider mb-2 flex items-center gap-1.5">
           <span>🛡️ 6 Erros Críticos Mais Frequentes</span>
         </h3>
@@ -418,7 +422,7 @@
         <h4 class="font-extrabold text-sky-300 text-xs sm:text-sm mb-1.5 flex items-center gap-1">💡 Estrutura do Campo 40 (Causas da Morte)</h4>
         <div class="space-y-1 text-xs leading-relaxed text-slate-300">
           <div><strong class="text-sky-200">Linha a:</strong> Motivo Iminente (causa terminal/imediata da morte).</div>
-          <div><strong class="text-sky-200">Linhas b e c:</strong> Eventos Intermediários / Antecedentes (ou <span class="bg-amber-800/60 text-amber-100 font-bold px-1 rounded border border-amber-600/50">Condição Básica</span> se não houver causas suficientes até a linha d).</div>
+          <div><strong class="text-sky-200">Linhas b e c:</strong> Eventos Intermediários / Antecedentes (ou <span class="bg-amber-800/60 text-amber-100 font-bold px-1 rounded border border-amber-600/50">Condição Básica</span> se não houver causas suficientes até a linha d). </div>
           <div><strong class="text-sky-200">Linha d:</strong> <span class="bg-amber-800/60 text-amber-100 font-bold px-1 rounded border border-amber-600/50">Condição Básica</span> quando houver 4 causas na cadeia (doença primária que iniciou o processo).</div>
           <div><strong class="text-sky-200">Parte II:</strong> Comorbidades contribuintes fora da cadeia direta.</div>
         </div>
@@ -538,15 +542,15 @@
                 <div class="flex items-center gap-1 mb-1"><span class="do-fnum">12</span><span class="do-flabel">Situação Conjugal</span></div>
                 <select id="f_12_estado_civil" class="do-input text-[10.5px]">
                   <option value=""></option>
-                  <option value="1">1 - Solteiro</option><option value="2">2 - Casado</option><option value="3">3 - Viúvo</option>
-                  <option value="4">4 - Separado/Divorciado</option><option value="5">5 - União Estável</option><option value="9">9 - Ignorada</option>
+                  <option value="1">1 - Solteiro</option><option value="2">2 -Casado</option><option value="3">3 - Viúvo</option>
+                  <option value="4">4 - Separado/Divorciado</option><option value="5">5 -União Estável</option><option value="9">9 - Ignorada</option>
                 </select>
               </div>
               <div class="col-span-12 sm:col-span-4 do-cell do-cell-no-b">
                 <div class="flex items-center gap-1 mb-1"><span class="do-fnum">13</span><span class="do-flabel">Escolaridade</span></div>
                 <select id="f_13_escolaridade" class="do-input text-[10.5px]">
                   <option value=""></option>
-                  <option value="0">0 - Sem escolaridade</option><option value="1">1 - Fundamental I</option><option value="2">2 - Fundamental II</option>
+                  <option value="0">0 - Sem escolaridade</option><option value="1">1 -Fundamental I</option><option value="2">2 - Fundamental II</option>
                   <option value="3">3 - Médio</option><option value="4">4 - Superior Incompleto</option><option value="5">5 - Superior Completo</option>
                   <option value="9">9 - Ignorado</option>
                 </select>
@@ -611,7 +615,7 @@
                 <select id="f_20_local" class="do-input text-xs">
                   <option value=""></option>
                   <option value="1">1 - Hospital</option><option value="2">2 - Outros estab. saúde</option><option value="3">3 - Domicílio</option>
-                  <option value="4">4 - Via pública</option><option value="5">5 - Outros</option><option value="6">6 - Aldeia Indígena</option>
+                  <option value="4">4 - Via pública</option><option value="5">5 -Outros</option><option value="6">6 - Aldeia Indígena</option>
                   <option value="9">9 - Ignorado</option>
                 </select>
               </div>
@@ -667,7 +671,7 @@
                 <div class="flex items-center gap-1 mb-0.5"><span class="do-fnum">28</span><span class="do-flabel">Escolaridade</span></div>
                 <select id="f_28_escolaridade_mae" class="do-input text-[10.5px]">
                   <option value=""></option>
-                  <option value="0">0 - Sem escolaridade</option><option value="1">1 - Fundamental I</option><option value="2">2 - Fundamental II</option>
+                  <option value="0">0 - Sem escolaridade</option><option value="1">1 -Fundamental I</option><option value="2">2 - Fundamental II</option>
                   <option value="3">3 - Médio</option><option value="4">4 - Superior Incompleto</option><option value="5">5 - Superior Completo</option>
                   <option value="9">9 - Ignorado</option>
                 </select>
@@ -698,21 +702,21 @@
                 <div class="flex items-center gap-1 mb-1"><span class="do-fnum">32</span><span class="do-flabel">Tipo gravidez</span></div>
                 <select id="f_32_gravidez" class="do-input text-[10.5px]">
                   <option value=""></option>
-                  <option value="1">1 - Única</option><option value="2">2 - Dupla</option><option value="3">3 - Tripla e mais</option><option value="9">9 - Ignorada</option>
+                  <option value="1">1 - Única</option><option value="2">2 -Dupla</option><option value="3">3 - Tripla e mais</option><option value="9">9 -Ignorada</option>
                 </select>
               </div>
               <div class="col-span-6 sm:col-span-2 do-cell">
                 <div class="flex items-center gap-1 mb-1"><span class="do-fnum">33</span><span class="do-flabel">Tipo parto</span></div>
                 <select id="f_33_parto" class="do-input text-[10.5px]">
                   <option value=""></option>
-                  <option value="1">1 - Vaginal</option><option value="2">2 - Cesáreo</option><option value="9">9 - Ignorado</option>
+                  <option value="1">1 - Vaginal</option><option value="2">2 -Cesáreo</option><option value="9">9 - Ignorado</option>
                 </select>
               </div>
               <div class="col-span-12 sm:col-span-4 do-cell">
                 <div class="flex items-center gap-1 mb-1"><span class="do-fnum">34</span><span class="do-flabel">Morte em rel. parto</span></div>
                 <select id="f_34_morte_parto" class="do-input text-[10.5px]">
                   <option value=""></option>
-                  <option value="1">1 - Antes</option><option value="2">2 - Durante</option><option value="3">3 - Depois</option><option value="9">9 - Ignorado</option>
+                  <option value="1">1 - Antes</option><option value="2">2 -Durante</option><option value="3">3 - Depois</option><option value="9">9 - Ignorado</option>
                 </select>
               </div>
             </div>
@@ -773,8 +777,8 @@
                 <div class="text-[9px] text-slate-500 font-mono">Tempo aprox | CID</div>
               </div>
               <div id="garbageAlert" class="hidden p-2 mb-2 bg-rose-50 border border-rose-400 text-rose-900 rounded text-xs flex gap-2"><span class="font-black">⚠</span><span id="garbageText" class="font-bold"></span></div>
-              
-              <div class="text-[9px] uppercase font-black text-slate-600 mb-1">Parte I - Doença ou estado mórbido que causou diretamente a morte</div>
+
+              <div class="text-[9px] uppercase font-black text-slate-600 mb-1">Parte I -Doença ou estado mórbido que causou diretamente a morte</div>
               <div class="flex items-center gap-1.5 py-0.5 border-b border-slate-200">
                 <span class="font-mono font-black text-xs w-4">a)</span>
                 <input type="text" id="f_40_causa_a" oninput="checkRealtimeGarbage()" placeholder="Motivo Iminente (Causa imediata)" class="do-input flex-1 font-bold text-xs">
@@ -803,7 +807,8 @@
                 <input type="text" id="f_40_cid_d" maxlength="6" class="do-input w-12 text-center text-[10px] border-l border-amber-300 pl-1 font-mono text-amber-950">
               </div>
               <div class="mt-1 pt-1 border-t border-slate-300">
-                <div class="text-[9px] uppercase font-black text-slate-600 mb-0.5">Parte II - Outras condições significativas que contribuíram</div>
+                <div class="text-[9px] uppercase font-black text-slate-600 mb-0.5">Parte II
+  -Outras condições significativas que contribuíram</div>
                 <div class="flex items-center gap-1.5 py-0.5">
                   <input type="text" id="f_40_causa_p2" oninput="checkRealtimeGarbage()" class="do-input flex-1 text-xs">
                   <input type="text" id="f_40_tempo_p2" class="do-input w-24 text-center text-[10px] border-l pl-1">
@@ -830,7 +835,7 @@
               <div class="col-span-6 sm:col-span-4 do-cell">
                 <div class="flex items-center gap-1 mb-0.5"><span class="do-fnum">43</span><span class="do-flabel">Óbito atestado por médico</span></div>
                 <select id="f_43_atendido" class="do-input text-[10px]">
-                  <option value=""></option><option value="1">1 - Assistente</option><option value="2">2 - Substituto</option><option value="3">3 - IML</option><option value="4">4 - SVO</option><option value="5">5 - Outro</option>
+                  <option value=""></option><option value="1">1 - Assistente</option><option value="2">2 - Substituto</option><option value="3">3 - IML</option><option value="4">4 -SVO</option><option value="5">5 - Outro</option>
                 </select>
               </div>
             </div>
@@ -1041,7 +1046,7 @@
         </div>
 
         <div class="no-print p-3 bg-slate-50 border-t border-slate-300 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-2.5">
-          <div class="text-xs text-slate-600 flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-600"></span><span>Preenchimento regulado por Resoluções CFM e SVS/MS.</span></div>
+          <div class="text-xs text-slate-600 flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-emerald-600"></span><span>Preenchimento regulado por Resoluções CFM e SVS/MS. </span></div>
           <button type="button" onclick="auditForm()" class="bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm px-5 py-2 rounded-lg shadow-md flex items-center justify-center gap-2 transition">Auditar DO</button>
         </div>
       </form>
@@ -1070,7 +1075,7 @@
           </div>
         </div>
         <div><h4 class="font-extrabold text-xs uppercase text-slate-200 mb-2">Avaliação dos Critérios Críticos:</h4><div id="auditItemsContainer" class="space-y-2"></div></div>
-        
+
         <div class="p-3 bg-sky-900/40 border border-sky-700/50 rounded-xl">
           <h4 class="font-bold text-xs text-sky-200 mb-1 flex items-center gap-1"><span>ℹ️</span> Recomendação Técnica Oficial:</h4>
           <p id="auditCaseOfficialSolution" class="text-sky-100 text-xs leading-relaxed font-medium"></p>
@@ -1111,7 +1116,8 @@
           f_5_nome: "ALINE MARIA DA SILVA", f_6_nome_pai: "JOSE ROBERTO DA SILVA", f_7_nome_mae: "MARIA DAS GRACAS SILVA",
           f_8_data_nasc: "1992-03-06", f_9_idade_anos: "34", f_9_idade_menor: "", f_10_sexo: "F", f_11_raca: "1", f_12_estado_civil: "1",
           f_13_escolaridade: "3", f_14_ocupacao: "AUXILIAR ADMINISTRATIVO", f_14_codigo: "",
-          f_15_logradouro: "RUA DAS ACACIAS", f_15_numero: "217", f_15_complemento: "", f_16_cep: "55024-999", f_17_bairro: "INDIANOPOLIS", f_17_codigo: "", f_18_municipio: "CARUARU", f_18_codigo: "", f_19_uf: "PE",
+          f_15_logradouro: "RUA DAS ACACIAS", f_15_numero: "217", f_15_complemento: "", f_16_cep: "55024-999", f_17_bairro: "INDIANOPOLIS", f_17_codigo: "", f_18_municipio:
+  "CARUARU", f_18_codigo: "", f_19_uf: "PE",
           f_20_local: "1", f_21_estabelecimento: "UNIDADE HOSPITALAR FICTICIA DO AGRESTE", f_21_codigo: "",
           f_22_endereco: "AVENIDA DO AGRESTE, 180", f_23_cep: "55030-999", f_24_bairro: "UNIVERSITARIO", f_25_municipio: "CARUARU", f_26_uf: "PE",
           f_27_idade_mae: "", f_28_escolaridade_mae: "", f_29_ocupacao_mae: "", f_30_vivos: "", f_30_mortos: "",
@@ -1156,12 +1162,14 @@
           f_13_escolaridade: "1", f_14_ocupacao: "PEDREIRO", f_14_codigo: "",
           f_15_logradouro: "RUA DO CEDRO", f_15_numero: "890", f_15_complemento: "", f_16_cep: "55660-999", f_17_bairro: "SAO FRANCISCO", f_17_codigo: "", f_18_municipio: "BEZERROS", f_18_codigo: "", f_19_uf: "PE",
           f_20_local: "1", f_21_estabelecimento: "HOSPITAL FICTICIO DO AGRESTE", f_21_codigo: "",
-          f_22_endereco: "RUA DO COMERCIO, 45", f_23_cep: "55660-998", f_24_bairro: "CENTRO", f_25_municipio: "BEZERROS", f_26_uf: "PE",
+          f_22_endereco: "RUA DO COMERCIO, 45", f_23_cep: "55660-998", f_24_bairro:
+  "CENTRO", f_25_municipio: "BEZERROS", f_26_uf: "PE",
           f_27_idade_mae: "", f_28_escolaridade_mae: "", f_29_ocupacao_mae: "", f_30_vivos: "", f_30_mortos: "",
           f_31_gestacao: "", f_32_gravidez: "", f_33_parto: "", f_34_morte_parto: "", f_35_peso: "", f_36_dnv: "",
           f_37_morte_mulher: "", f_38_assistencia: "1", f_39_necropsia: "2",
           f_40_causa_a: "CHOQUE CARDIOGENICO", f_40_tempo_a: "12 HORAS", f_40_cid_a: "",
-          f_40_causa_b: "INFARTO AGUDO DO MIOCARDIO", f_40_tempo_b: "4 DIAS", f_40_cid_b: "",
+          f_40_causa_b: "INFARTO AGUDO DO MIOCARDIO", f_40_tempo_b: "4 DIAS", f_40_cid_b:
+  "",
           f_40_causa_c: "ATEROSCLEROSE CORONARIANA", f_40_tempo_c: "4 DIAS", f_40_cid_c: "",
           f_40_causa_d: "", f_40_tempo_d: "", f_40_cid_d: "",
           f_40_causa_p2: "HIPERTENSAO ARTERIAL SISTEMICA E DIABETES", f_40_tempo_p2: "18 ANOS", f_40_cid_p2: "",
@@ -1221,7 +1229,8 @@
         history: `
           <div class="p-2.5 bg-slate-800 rounded-lg border border-slate-600 space-y-1.5 text-xs sm:text-sm leading-relaxed text-slate-200">
             <p><strong class="text-white">Mãe:</strong> Beatriz Silveira Lima, 29 anos. G2P1A0 (1 vivo, 0 mortos). Casada, Superior, Professora. Nat: Garanhuns/PE. Reside: Rua das Palmeiras 450, Heliópolis, Garanhuns - PE, CEP 55296-999.</p>
-            <p><strong class="text-white">Feto:</strong> Óbito intrauterino 17/09/2026 às 11:20. Sexo: Masc. Raça: Branca. Pai: Rodrigo Lima. Parto vaginal, morto Antes do parto. Única. 32 semanas. Peso: 1800g.</p>
+            <p><strong class="text-white">Feto:</strong> Óbito intrauterino 17/09/2026 às 11:20. Sexo: Masc. Raça: Branca. Pai: Rodrigo Lima. Parto vaginal, morto Antes do parto.
+  Única. 32 semanas. Peso: 1800g.</p>
             <p><strong class="text-white">Ocorrência:</strong> Maternidade Fictícia do Agreste, Rua da Saúde 100, Boa Vista, Garanhuns - PE.</p>
             <p><strong class="text-white">Quadro e Evolução:</strong> <strong>Há algumas horas</strong> antes do parto: gestante apresentou Descolamento Prematuro de Placenta (DPP). <strong>Nas horas seguintes:</strong> o feto evoluiu, por fim, com Anoxia Intrauterina Grave, falecendo antes do parto. Teve assistência médica. Sem necrópsia.</p>
             <p><strong class="text-white">Médica:</strong> Dra. Helena Moura, CRM-PE 99993. Assistente. (87) 99999-0004.</p>
@@ -1240,7 +1249,8 @@
           f_5_nome: "NATIMORTO", f_6_nome_pai: "RODRIGO LIMA", f_7_nome_mae: "BEATRIZ SILVEIRA LIMA",
           f_8_data_nasc: "2026-09-17", f_9_idade_anos: "", f_9_idade_menor: "", f_10_sexo: "M", f_11_raca: "1", f_12_estado_civil: "",
           f_13_escolaridade: "", f_14_ocupacao: "", f_14_codigo: "",
-          f_15_logradouro: "RUA DAS PALMEIRAS", f_15_numero: "450", f_15_complemento: "", f_16_cep: "55296-999", f_17_bairro: "HELIOPOLIS", f_17_codigo: "", f_18_municipio: "GARANHUNS", f_18_codigo: "", f_19_uf: "PE",
+          f_15_logradouro: "RUA DAS PALMEIRAS", f_15_numero: "450", f_15_complemento: "", f_16_cep: "55296-999", f_17_bairro: "HELIOPOLIS", f_17_codigo: "", f_18_municipio:
+  "GARANHUNS", f_18_codigo: "", f_19_uf: "PE",
           f_20_local: "1", f_21_estabelecimento: "MATERNIDADE FICTICIA DO AGRESTE", f_21_codigo: "",
           f_22_endereco: "RUA DA SAUDE, 100", f_23_cep: "55295-999", f_24_bairro: "BOA VISTA", f_25_municipio: "GARANHUNS", f_26_uf: "PE",
           f_27_idade_mae: "29", f_28_escolaridade_mae: "5", f_29_ocupacao_mae: "PROFESSORA", f_30_vivos: "1", f_30_mortos: "0",
@@ -1345,14 +1355,12 @@
 
     function updateStampText() {
       if (hasDoctorStamp) {
-        document.getElementById("stampContent").innerHTML = `${escapeHtml(document.getElementById("f_41_nome_medico").value)}<br>${escapeHtml(document.getElementById("f_42_crm").value)}`;
+        document.getElementById("stampContent").innerHTML = `${escapeHtml(document. getElementById("f_41_nome_medico").value)}<br>${escapeHtml(document. getElementById("f_42_crm").value)}`;
       }
     }
 
     function toggleFetalHighlight(val) {
-      const b = document.getElementById("blocoVRow");
-      if (val === "fetal") b.classList.add("ring-2", "ring-sky-500", "bg-sky-50/40");
-      else b.classList.remove("ring-2", "ring-sky-500", "bg-sky-50/40");
+      // Destaque visual removido (gerava listra azul no meio da DO)
     }
 
     function escapeHtml(str) {
@@ -1367,11 +1375,11 @@
     ];
 
     function checkRealtimeGarbage() {
-      const v = [document.getElementById("f_40_causa_a").value, document.getElementById("f_40_causa_b").value, document.getElementById("f_40_causa_c").value, document.getElementById("f_40_causa_d").value, document.getElementById("f_40_causa_p2").value].join(" ");
+      const v = [document.getElementById("f_40_causa_a").value, document. getElementById("f_40_causa_b").value, document.getElementById("f_40_causa_c").value, document. getElementById("f_40_causa_d").value, document.getElementById("f_40_causa_p2").value].join(" ");
       let msg = null;
       for (const t of GARBAGE_TERMS) if (t.regex.test(v)) { msg = t.msg; break; }
       const alert = document.getElementById("garbageAlert");
-      if (msg) { document.getElementById("garbageText").innerText = msg; alert.classList.remove("hidden"); }
+      if (msg) { document.getElementById("garbageText").innerText = msg; alert.classList. remove("hidden"); }
       else alert.classList.add("hidden");
     }
 
@@ -1383,12 +1391,12 @@
       });
       hasDoctorStamp = false;
       document.getElementById("stampVisualArea").classList.add("hidden");
-      
+
       const btnStamp = document.getElementById("btnStamp");
       btnStamp.innerText = "Apor Carimbo";
       btnStamp.classList.remove("bg-rose-600", "hover:bg-rose-500");
       btnStamp.classList.add("bg-blue-600", "hover:bg-blue-500");
-      
+
       document.getElementById("garbageAlert").classList.add("hidden");
       document.querySelector('input[name="f_1_tipo_obito"][value="nao_fetal"]').checked = true;
     }
@@ -1407,11 +1415,11 @@
           }
         }
       });
-      
+
       /* Garante que o carimbo aplique corretamente e mude o botão após o gabarito */
       hasDoctorStamp = false;
       toggleStamp();
-      
+
       checkRealtimeGarbage();
     }
 
@@ -1421,20 +1429,22 @@
       const v = c.validation;
       const d = c.idealData;
       // Normalizador para ignorar acentos e letras maiúsculas/minúsculas nas comparações
-      const norm = (str) => (str || '').trim().toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, ' ');
-      
+      const norm = (str) => (str || '').trim().toUpperCase().normalize("NFD"). replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, ' ');
+
       const nome = document.getElementById("f_5_nome").value.trim().toUpperCase();
       const sexo = document.getElementById("f_10_sexo").value;
       const isFetal = document.querySelector('input[name="f_1_tipo_obito"]:checked')?.value === "fetal";
-      const assist = document.querySelector('input[name="f_38_assistencia"]:checked')?.value;
-      const necropsia = document.querySelector('input[name="f_39_necropsia"]:checked')?.value;
+      const assist =
+  document.querySelector('input[name="f_38_assistencia"]:checked')?.value;
+      const necropsia = document.querySelector('input[name="f_39_necropsia"]:checked')?. value;
       const morteMulher = document.getElementById("f_37_morte_mulher").value;
       const idadeStr = document.getElementById("f_9_idade_anos").value;
       const idade = idadeStr ? parseInt(idadeStr, 10) : null;
-      
+
       // 1. Carimbo (47)
-      if (hasDoctorStamp && document.getElementById("f_41_nome_medico").value && document.getElementById("f_42_crm").value) {
-        items.push({title: "1. Assinatura e Carimbo (Campo 47)", status: "ok", msg: "Correto. Identificação médica presente."});
+      if (hasDoctorStamp && document.getElementById("f_41_nome_medico").value && document. getElementById("f_42_crm").value) {
+        items.push({title: "1. Assinatura e Carimbo (Campo 47)", status: "ok", msg:
+  "Correto. Identificação médica presente."});
       } else {
         score -= 20; items.push({title: "1. Assinatura/Carimbo", status: "error", msg: "Obrigatório apor carimbo médico com CRM."});
       }
@@ -1495,7 +1505,7 @@
       const cidP2 = document.getElementById("f_40_cid_p2").value.trim();
 
       const causas = [causaA, causaB, causaC, causaD, causaP2].join(" ").toUpperCase();
-      
+
       let gb = false;
       let gbMsg = "";
       for (const t of GARBAGE_TERMS) {
@@ -1561,7 +1571,7 @@
           score -= 15;
           items.push({title: "5. Cadeia Causal Incoerente (40)", status: "error", msg: errosCadeia.join(" ")});
         } else {
-          const ultimaLinha = filledLines.length > 0 ? filledLines[filledLines.length - 1].id : 'd';
+          const ultimaLinha = filledLines.length > 0 ? filledLines[filledLines.length - 1]. id : 'd';
           items.push({title: "5. Cadeia Causal (40)", status: "ok", msg: `Sequência diagnóstica validada com causa iminente na linha 'a' e condição básica na linha '${ultimaLinha}'.`});
         }
 
@@ -1576,27 +1586,27 @@
 
       // 6. Identificação e Residência (Cruzamento Estrito de Dados)
       let errosIdent = [];
-      
-      const tipoObito = document.querySelector('input[name="f_1_tipo_obito"]:checked')?.value || "";
+
+      const tipoObito = document.querySelector('input[name="f_1_tipo_obito"]:checked')?. value || "";
       if (tipoObito !== d.f_1_tipo_obito) errosIdent.push("Tipo de Óbito (Fetal/Não Fetal)");
-      
+
       if (document.getElementById("f_2_data").value !== d.f_2_data) errosIdent.push("Data do Óbito");
       if (document.getElementById("f_2_hora").value !== d.f_2_hora) errosIdent.push("Hora do Óbito");
-      if (norm(document.getElementById("f_4_naturalidade").value) !== norm(d.f_4_naturalidade)) errosIdent.push("Naturalidade");
-      if (norm(document.getElementById("f_5_nome").value) !== norm(d.f_5_nome)) errosIdent.push("Nome do Falecido");
+      if (norm(document.getElementById("f_4_naturalidade").value) !== norm(d. f_4_naturalidade)) errosIdent.push("Naturalidade");
+      if (norm(document.getElementById("f_5_nome").value) !== norm(d.f_5_nome)) errosIdent. push("Nome do Falecido");
       if (norm(document.getElementById("f_6_nome_pai").value) !== norm(d.f_6_nome_pai)) errosIdent.push("Nome do Pai");
       if (norm(document.getElementById("f_7_nome_mae").value) !== norm(d.f_7_nome_mae)) errosIdent.push("Nome da Mãe");
-      
-      if (document.getElementById("f_10_sexo").value !== d.f_10_sexo) errosIdent.push("Sexo");
-      if (document.getElementById("f_8_data_nasc").value !== d.f_8_data_nasc) errosIdent.push("Data de Nascimento");
+
+      if (document.getElementById("f_10_sexo").value !== d.f_10_sexo) errosIdent. push("Sexo");
+      if (document.getElementById("f_8_data_nasc").value !== d.f_8_data_nasc) errosIdent. push("Data de Nascimento");
       if (!isFetal && document.getElementById("f_9_idade_anos").value !== d.f_9_idade_anos) errosIdent.push("Idade");
-      
+
       const raca = document.querySelector('input[name="f_11_raca"]:checked')?.value || "";
       if (raca !== d.f_11_raca) errosIdent.push("Raça/Cor");
-      
+
       if (document.getElementById("f_12_estado_civil").value !== d.f_12_estado_civil) errosIdent.push("Situação Conjugal");
       if (document.getElementById("f_13_escolaridade").value !== d.f_13_escolaridade) errosIdent.push("Escolaridade");
-      
+
       if (norm(document.getElementById("f_14_ocupacao").value) !== norm(d.f_14_ocupacao)) errosIdent.push("Ocupação Habitual");
       if (norm(document.getElementById("f_18_municipio").value) !== norm(d.f_18_municipio)) errosIdent.push("Município de Residência");
 
@@ -1609,8 +1619,8 @@
       // Regras IML (Caso 3)
       if (currentCaseKey === "caso3" || v.isTrauma) {
         const atestadoPor = document.getElementById("f_43_atendido").value;
-        const tipoCausaExterna = document.querySelector('input[name="f_48_tipo"]:checked')?.value;
-        
+        const tipoCausaExterna = document.querySelector('input[name="f_48_tipo"]:checked')?. value;
+
         if (atestadoPor !== "3") {
           score -= 25; items.unshift({title: "ERRO GRAVE ÉTICO (IML)", status: "error", msg: "Morte por causa externa (acidente/violência) DEVE ser atestada pelo IML (Campo 43 = 3)."});
         } else {
@@ -1627,7 +1637,7 @@
         if (!isFetal) {
           score -= 20; items.unshift({title: "ERRO BLOCO FETAL", status: "error", msg: "Este caso é um óbito fetal. Marque a opção correta no Campo 1."});
         }
-        if (!document.getElementById("f_27_idade_mae").value || !document.getElementById("f_31_gestacao").value) {
+        if (!document.getElementById("f_27_idade_mae").value || !document. getElementById("f_31_gestacao").value) {
           score -= 15; items.push({title: "Bloco IV (Mãe)", status: "error", msg: "Dados maternos e idade gestacional são obrigatórios em óbitos fetais."});
         } else {
           items.push({title: "Bloco IV (Fetal)", status: "ok", msg: "Informações maternas registradas corretamente."});
@@ -1650,21 +1660,23 @@
       });
       document.getElementById("auditCaseOfficialSolution").innerText = rec;
       document.getElementById("auditModal").classList.remove("hidden");
-      
+
       const badge = document.getElementById("auditBadgeStatus");
       const summaryText = document.getElementById("auditSummaryText");
       const iconScore = document.getElementById("auditIconScore");
-      
+
       if (score >= 85) {
         badge.className = "px-3 py-1 rounded-full font-black text-xs bg-emerald-900/60 text-emerald-300 border border-emerald-600";
         badge.innerText = "Aprovado / Padrão Ouro";
-        summaryText.innerText = "Preenchimento de excelente padrão técnico e epidemiológico.";
+        summaryText.innerText = "Preenchimento de excelente padrão técnico e epidemiológico. ";
         iconScore.className = "w-9 h-9 rounded-lg flex items-center justify-center font-black text-white text-base bg-emerald-600";
         iconScore.innerText = "✓";
       } else if (score >= 60) {
         badge.className = "px-3 py-1 rounded-full font-black text-xs bg-amber-900/60 text-amber-300 border border-amber-600";
         badge.innerText = "Atenção a Inconformidades";
         summaryText.innerText = "Contém falhas que comprometem a análise estatística.";
+
+
         iconScore.className = "w-9 h-9 rounded-lg flex items-center justify-center font-black text-white text-base bg-amber-600";
         iconScore.innerText = "!";
       } else {
@@ -1676,10 +1688,10 @@
       }
     }
 
-    function closeAuditModal() { document.getElementById("auditModal").classList.add("hidden"); }
+    function closeAuditModal() { document.getElementById("auditModal").classList. add("hidden"); }
 
     window.onload = () => loadCase("caso1");
   </script>
-<script>(function(){var h=document.querySelector('header.sticky');if(!h)return;function u(){document.documentElement.style.setProperty('--hdr-h',h.offsetHeight+'px');h.classList.toggle('is-scrolled',window.scrollY>8)}addEventListener('scroll',u,{passive:true});addEventListener('resize',u);addEventListener('load',u);u()})();</script>
+<script>(function(){var h=document.querySelector('header.sticky');if(!h)return;function u(){document.documentElement.style.setProperty('--hdr-h',h.offsetHeight+'px');h.classList. toggle('is-scrolled',window.scrollY>8)}addEventListener('scroll',u,{passive:true}); addEventListener('resize',u);addEventListener('load',u);u()})();</script>
 </body>
 </html>
