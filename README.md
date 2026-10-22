@@ -66,11 +66,11 @@ A ordem dos scripts no `index.html` é deliberada:
 
 O simulador é uma ferramenta de treinamento. As mensagens de auditoria representam regras pedagógicas implementadas no software e não substituem:
 
-- legislação e normativas vigentes;
-- manuais oficiais do Ministério da Saúde;
-- normas profissionais;
-- protocolos institucionais;
-- julgamento clínico e responsabilidade profissional.
+- Legislação e Normativas vigentes;
+- Manuais Técnicos do Ministério da Saúde;
+- Lei do Ato Médico ( Lei nº 12.842/2013);
+- Protocolos Institucionais;
+- Julgamento clínico e responsabilidade profissional.
 
 Antes de utilizar o simulador em atividade institucional, recomenda-se revisar periodicamente as regras, campos e textos de acordo com a versão vigente da Declaração de Óbito e das normas aplicáveis.
 
