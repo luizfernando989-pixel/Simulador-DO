@@ -1,7 +1,6 @@
 # Simulador de Preenchimento da Declaração de Óbito (DO)
 
-Aplicação web educacional voltada ao treinamento do preenchimento da Declaração de Óbito (DO), estruturada com casos clínicos, formulário visual interativo, validações pedagógicas e auditoria de campos. O protótipo foi desenvolvido através da abordagem Vibe Coding, onde foram utilizados o Lovable e o Google AI Studio.
-
+Aplicação web educacional voltada ao treinamento do preenchimento da Declaração de Óbito (DO), estruturada com casos clínicos, formulário visual interativo, validações pedagógicas e auditoria de campos. O protótipo foi desenvolvido através da abordagem Vibe Coding, com o apoio do Lovable e do Google Antigravity.
 ## Estrutura
 
 ```text
