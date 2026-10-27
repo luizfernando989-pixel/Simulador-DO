@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800; 900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@600;700;800&family=Share+Tech+Mono&display=swap" rel="stylesheet">
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -18,8 +18,9 @@
       font-size: 14.5px;
     }
     .font-mono-do {
-      font-family: 'Share Tech Mono', monospace;
+      font-family: 'JetBrains Mono', 'Share Tech Mono', monospace;
       letter-spacing: 0.04em;
+      font-weight: 800;
     }
     /* Estilos fidedignos para as vias oficiais com contraste aprimorado - ESTAS PROTEGEM O FORMULÁRIO */
     .via-branca { background-color: #ffffff; border-color: #475569; }
@@ -52,8 +53,8 @@
     .do-flabel { font-size: 10.5px; font-weight: 700; color: #1e293b; line-height: 1.2; text-transform: uppercase; }
     .do-input {
       width: 100%; border: none; background: transparent; outline: none;
-      font-family: 'Share Tech Mono', monospace; font-size: 13.5px; font-weight: 700;
-      color: #0f172a; text-transform: uppercase; padding: 2px 0;
+      font-family: 'JetBrains Mono', 'Share Tech Mono', monospace; font-size: 13.5px; font-weight: 800;
+      color: #000000; text-transform: uppercase; padding: 2px 0;
     }
     .do-input:focus { background-color: rgba(5, 150, 105, 0.09); box-shadow: inset 0 -2px 0 #059669; }
     .do-input::placeholder { color: #94a3b8; font-weight: 400; text-transform: none; font-size: 11.5px; }
@@ -80,8 +81,7 @@
     /* Proteções da Camada Visual da DO Impressa contra o Dark Mode externo */
     .do-toolbar { background: #334155; border-color: #475569; border-radius: 0; }
     .do-document-sheet {
-      color: #202020; font-family: Arial, Helvetica, sans-serif; border: 1.5px solid
-  #232323;
+      color: #202020; font-family: Arial, Helvetica, sans-serif; border: 1.5px solid #232323;
       border-radius: 0; box-shadow: 0 15px 35px rgba(0, 0, 0, .3); isolation: isolate;
     }
     .do-document-sheet .do-block-row { border-bottom-color: #303030; }
@@ -97,8 +97,7 @@
     }
     .do-chk-box {
       display: inline-flex; align-items: center; gap: 3px; font-size: 9px;
-      font-weight: 600; color: #1e293b; cursor: pointer; user-select: none; line-height:
-  1.2;
+      font-weight: 600; color: #1e293b; cursor: pointer; user-select: none; line-height: 1.2;
     }
     .do-chk-box input[type="radio"] {
       appearance: none; -webkit-appearance: none; width: 11px; height: 11px;
@@ -116,14 +115,13 @@
       display: flex; flex-direction: column; align-items: center; justify-content: center;
       font-size: 8px; font-weight: 700; color: #252525; line-height: 1.1; shrink: 0;
     }
-    .do-document-sheet .do-fnum { border: 0; border-radius: 0; margin-right: 2px; padding:
-  0; font-size: 8px; background: transparent; }
+    .do-document-sheet .do-fnum { border: 0; border-radius: 0; margin-right: 2px; padding: 0; font-size: 8px; background: transparent; }
     .do-document-sheet .do-flabel { color: #252525; font-size: 8px; font-weight: 700; letter-spacing: -.015em; }
-    .do-document-sheet .do-input { color: #161616; font-family: 'Share Tech Mono', 'Courier New', monospace; font-size: 11px; line-height: 1.15; padding: 1px 0; }
+    .do-document-sheet .do-input { color: #000000; font-family: 'JetBrains Mono', 'Share Tech Mono', 'Courier New', monospace; font-size: 11.5px; font-weight: 800; line-height: 1.15; padding: 1px 0; }
     .do-document-sheet .do-input:focus { background: #fff5bf; box-shadow: inset 0 -1px 0 #555; }
     .do-document-sheet .do-opt { font-size: 9px; gap: 2px; }
     .do-document-sheet .do-opt input { width: 10px; height: 10px; accent-color: #383838; }
-    .do-document-sheet .med-stamp { border-color: #333; color: #222; background: #fff; border-radius: 0; box-shadow: none; }
+    .do-document-sheet .med-stamp { border-color: #333; color: #000; background: #fff; border-radius: 0; box-shadow: none; }
     .official-document-header { min-height: 55px; padding: 6px 10px !important; border-bottom-color: #303030 !important; }
     .official-document-header .do-title-band { background: #a4a4a4; border-radius: 0; box-shadow: none; font-size: 12px; padding: 2px 16px; }
     .official-document-header .do-number { border: 0; border-radius: 0; background: transparent; padding: 0; }
@@ -168,8 +166,7 @@
       background: linear-gradient(135deg,#10b981,#047857) !important;
       box-shadow: 0 6px 16px -4px rgba(16,185,129,.45), inset 0 1px 0 rgba(255,255,255,.35) !important;
     }
-    button { transition: transform .15s ease, box-shadow .2s ease, background-color .2s
-  ease, filter .2s ease, color .2s ease; }
+    button { transition: transform .15s ease, box-shadow .2s ease, background-color .2s ease, filter .2s ease, color .2s ease; }
     button:hover { transform: translateY(-1px); }
     button:active { transform: translateY(0) scale(.98); }
     header select { border-radius: 10px; }
@@ -318,7 +315,7 @@
       #auditModal > div { max-height: 92vh; }
     }
     @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
-  /* Extensão das cores das vias (amarela/rosa) para toda a folha da D.O. — apenas layout */
+    /* Extensão das cores das vias (amarela/rosa) para toda a folha da D.O. — apenas layout */
     .via-amarela, .via-amarela .bg-white, .via-amarela .bg-slate-50, .via-amarela .bg-slate-50\/50,
     .via-amarela .bg-slate-100, .via-amarela .bg-slate-200, .via-amarela .bg-rose-50, .via-amarela .bg-rose-50\/50,
     .via-amarela .bg-sky-50\/50, .via-amarela .bg-indigo-50\/40, .via-amarela .bg-amber-50\/70,
@@ -331,6 +328,45 @@
     .via-rosa .official-document-header, .via-rosa select, .via-rosa textarea { background-color: #fff1f2 !important; }
     .via-amarela .do-input:focus { background-color: #fef08a !important; }
     .via-rosa .do-input:focus { background-color: #fecdd3 !important; }
+
+    /* ===== Destaque em Negrito no Preenchimento da D.O. ===== */
+    .do-input,
+    .do-document-sheet .do-input,
+    #doForm input:not([type="radio"]):not([type="checkbox"]),
+    #doForm select,
+    #doForm textarea {
+      font-family: 'JetBrains Mono', 'Share Tech Mono', 'Courier New', monospace !important;
+      font-weight: 800 !important;
+      color: #000000 !important;
+      -webkit-text-stroke: 0.3px currentColor;
+      letter-spacing: 0.015em;
+    }
+    #doForm #f_5_nome {
+      font-size: 13.5px !important;
+      font-weight: 800 !important;
+      -webkit-text-stroke: 0.35px currentColor;
+    }
+    #doForm select option {
+      font-weight: 700;
+      color: #000000;
+    }
+    .do-input::placeholder,
+    .do-document-sheet .do-input::placeholder {
+      color: #94a3b8 !important;
+      font-weight: 400 !important;
+      -webkit-text-stroke: 0 !important;
+    }
+    .do-opt:has(input:checked),
+    .do-chk-box:has(input:checked) {
+      font-weight: 900 !important;
+      color: #000000 !important;
+      -webkit-text-stroke: 0.25px currentColor;
+    }
+    .do-document-sheet .med-stamp {
+      font-weight: 900 !important;
+      color: #000000 !important;
+      -webkit-text-stroke: 0.25px currentColor;
+    }
   </style>
 </head>
 <body class="min-h-screen flex flex-col text-slate-800 bg-slate-100">
@@ -383,7 +419,7 @@
 
       <!-- Prontuário Panel Dim -->
       <div id="sectionProntuario" class="bg-slate-700 border border-slate-600 rounded-xl p-3.5 sm:p-4 shadow-lg text-slate-100">
-        <div class="flex items-center justify-between border-b border-slate-500 pb-2.5 mb-2. 5">
+        <div class="flex items-center justify-between border-b border-slate-500 pb-2.5 mb-2.5">
           <div class="flex items-center gap-2">
             <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
             <h2 class="font-extrabold text-sm text-white uppercase tracking-wide">Prontuário do Paciente</h2>
@@ -398,7 +434,7 @@
       </div>
 
       <!-- Checklist Panel Dim -->
-      <div id="sectionChecklist" class="bg-slate-700 border border-slate-600 rounded-xl p-3. 5 sm:p-4 shadow-lg">
+      <div id="sectionChecklist" class="bg-slate-700 border border-slate-600 rounded-xl p-3.5 sm:p-4 shadow-lg">
         <h3 class="font-extrabold text-xs sm:text-sm text-amber-400 uppercase tracking-wider mb-2 flex items-center gap-1.5">
           <span>🛡️ 6 Erros Críticos Mais Frequentes</span>
         </h3>
@@ -820,8 +856,7 @@
                 <input type="text" id="f_40_cid_d" maxlength="6" class="do-input w-12 text-center text-[10px] border-l border-amber-300 pl-1 font-mono text-amber-950">
               </div>
               <div class="mt-1 pt-1 border-t border-slate-300">
-                <div class="text-[9px] uppercase font-black text-slate-600 mb-0.5">Parte II
-  -Outras condições significativas que contribuíram</div>
+                <div class="text-[9px] uppercase font-black text-slate-600 mb-0.5">Parte II - Outras condições significativas que contribuíram</div>
                 <div class="flex items-center gap-1.5 py-0.5">
                   <input type="text" id="f_40_causa_p2" oninput="checkRealtimeGarbage()" class="do-input flex-1 text-xs">
                   <input type="text" id="f_40_tempo_p2" class="do-input w-24 text-center text-[10px] border-l pl-1">
@@ -1129,8 +1164,7 @@
           f_5_nome: "ALINE MARIA DA SILVA", f_6_nome_pai: "JOSE ROBERTO DA SILVA", f_7_nome_mae: "MARIA DAS GRACAS SILVA",
           f_8_data_nasc: "1992-03-06", f_9_idade_anos: "34", f_9_idade_menor: "", f_10_sexo: "F", f_11_raca: "1", f_12_estado_civil: "1",
           f_13_escolaridade: "3", f_14_ocupacao: "AUXILIAR ADMINISTRATIVO", f_14_codigo: "",
-          f_15_logradouro: "RUA DAS ACACIAS", f_15_numero: "217", f_15_complemento: "", f_16_cep: "55024-999", f_17_bairro: "INDIANOPOLIS", f_17_codigo: "", f_18_municipio:
-  "CARUARU", f_18_codigo: "", f_19_uf: "PE",
+          f_15_logradouro: "RUA DAS ACACIAS", f_15_numero: "217", f_15_complemento: "", f_16_cep: "55024-999", f_17_bairro: "INDIANOPOLIS", f_17_codigo: "", f_18_municipio: "CARUARU", f_18_codigo: "", f_19_uf: "PE",
           f_20_local: "1", f_21_estabelecimento: "UNIDADE HOSPITALAR FICTICIA DO AGRESTE", f_21_codigo: "",
           f_22_endereco: "AVENIDA DO AGRESTE, 180", f_23_cep: "55030-999", f_24_bairro: "UNIVERSITARIO", f_25_municipio: "CARUARU", f_26_uf: "PE",
           f_27_idade_mae: "", f_28_escolaridade_mae: "", f_29_ocupacao_mae: "", f_30_vivos: "", f_30_mortos: "",
@@ -1175,14 +1209,12 @@
           f_13_escolaridade: "1", f_14_ocupacao: "PEDREIRO", f_14_codigo: "",
           f_15_logradouro: "RUA DO CEDRO", f_15_numero: "890", f_15_complemento: "", f_16_cep: "55660-999", f_17_bairro: "SAO FRANCISCO", f_17_codigo: "", f_18_municipio: "BEZERROS", f_18_codigo: "", f_19_uf: "PE",
           f_20_local: "1", f_21_estabelecimento: "HOSPITAL FICTICIO DO AGRESTE", f_21_codigo: "",
-          f_22_endereco: "RUA DO COMERCIO, 45", f_23_cep: "55660-998", f_24_bairro:
-  "CENTRO", f_25_municipio: "BEZERROS", f_26_uf: "PE",
+          f_22_endereco: "RUA DO COMERCIO, 45", f_23_cep: "55660-998", f_24_bairro: "CENTRO", f_25_municipio: "BEZERROS", f_26_uf: "PE",
           f_27_idade_mae: "", f_28_escolaridade_mae: "", f_29_ocupacao_mae: "", f_30_vivos: "", f_30_mortos: "",
           f_31_gestacao: "", f_32_gravidez: "", f_33_parto: "", f_34_morte_parto: "", f_35_peso: "", f_36_dnv: "",
           f_37_morte_mulher: "", f_38_assistencia: "1", f_39_necropsia: "2",
           f_40_causa_a: "CHOQUE CARDIOGENICO", f_40_tempo_a: "12 HORAS", f_40_cid_a: "",
-          f_40_causa_b: "INFARTO AGUDO DO MIOCARDIO", f_40_tempo_b: "4 DIAS", f_40_cid_b:
-  "",
+          f_40_causa_b: "INFARTO AGUDO DO MIOCARDIO", f_40_tempo_b: "4 DIAS", f_40_cid_b: "",
           f_40_causa_c: "ATEROSCLEROSE CORONARIANA", f_40_tempo_c: "4 DIAS", f_40_cid_c: "",
           f_40_causa_d: "", f_40_tempo_d: "", f_40_cid_d: "",
           f_40_causa_p2: "HIPERTENSAO ARTERIAL SISTEMICA E DIABETES", f_40_tempo_p2: "18 ANOS", f_40_cid_p2: "",
@@ -1242,8 +1274,7 @@
         history: `
           <div class="p-2.5 bg-slate-800 rounded-lg border border-slate-600 space-y-1.5 text-xs sm:text-sm leading-relaxed text-slate-200">
             <p><strong class="text-white">Mãe:</strong> Beatriz Silveira Lima, 29 anos. G2P1A0 (1 vivo, 0 mortos). Casada, Superior, Professora. Nat: Garanhuns/PE. Reside: Rua das Palmeiras 450, Heliópolis, Garanhuns - PE, CEP 55296-999.</p>
-            <p><strong class="text-white">Feto:</strong> Óbito intrauterino 17/09/2026 às 11:20. Sexo: Masc. Raça: Branca. Pai: Rodrigo Lima. Parto vaginal, morto Antes do parto.
-  Única. 32 semanas. Peso: 1800g.</p>
+            <p><strong class="text-white">Feto:</strong> Óbito intrauterino 17/09/2026 às 11:20. Sexo: Masc. Raça: Branca. Pai: Rodrigo Lima. Parto vaginal, morto Antes do parto. Única. 32 semanas. Peso: 1800g.</p>
             <p><strong class="text-white">Ocorrência:</strong> Maternidade Fictícia do Agreste, Rua da Saúde 100, Boa Vista, Garanhuns - PE.</p>
             <p><strong class="text-white">Quadro e Evolução:</strong> <strong>Há algumas horas</strong> antes do parto: gestante apresentou Descolamento Prematuro de Placenta (DPP). <strong>Nas horas seguintes:</strong> o feto evoluiu, por fim, com Anoxia Intrauterina Grave, falecendo antes do parto. Teve assistência médica. Sem necrópsia.</p>
             <p><strong class="text-white">Médica:</strong> Dra. Helena Moura, CRM-PE 99993. Assistente. (87) 99999-0004.</p>
@@ -1262,8 +1293,7 @@
           f_5_nome: "NATIMORTO", f_6_nome_pai: "RODRIGO LIMA", f_7_nome_mae: "BEATRIZ SILVEIRA LIMA",
           f_8_data_nasc: "2026-09-17", f_9_idade_anos: "", f_9_idade_menor: "", f_10_sexo: "M", f_11_raca: "1", f_12_estado_civil: "",
           f_13_escolaridade: "", f_14_ocupacao: "", f_14_codigo: "",
-          f_15_logradouro: "RUA DAS PALMEIRAS", f_15_numero: "450", f_15_complemento: "", f_16_cep: "55296-999", f_17_bairro: "HELIOPOLIS", f_17_codigo: "", f_18_municipio:
-  "GARANHUNS", f_18_codigo: "", f_19_uf: "PE",
+          f_15_logradouro: "RUA DAS PALMEIRAS", f_15_numero: "450", f_15_complemento: "", f_16_cep: "55296-999", f_17_bairro: "HELIOPOLIS", f_17_codigo: "", f_18_municipio: "GARANHUNS", f_18_codigo: "", f_19_uf: "PE",
           f_20_local: "1", f_21_estabelecimento: "MATERNIDADE FICTICIA DO AGRESTE", f_21_codigo: "",
           f_22_endereco: "RUA DA SAUDE, 100", f_23_cep: "55295-999", f_24_bairro: "BOA VISTA", f_25_municipio: "GARANHUNS", f_26_uf: "PE",
           f_27_idade_mae: "29", f_28_escolaridade_mae: "5", f_29_ocupacao_mae: "PROFESSORA", f_30_vivos: "1", f_30_mortos: "0",
@@ -1368,7 +1398,7 @@
 
     function updateStampText() {
       if (hasDoctorStamp) {
-        document.getElementById("stampContent").innerHTML = `${escapeHtml(document. getElementById("f_41_nome_medico").value)}<br>${escapeHtml(document. getElementById("f_42_crm").value)}`;
+        document.getElementById("stampContent").innerHTML = `${escapeHtml(document.getElementById("f_41_nome_medico").value)}<br>${escapeHtml(document.getElementById("f_42_crm").value)}`;
       }
     }
 
@@ -1388,11 +1418,11 @@
     ];
 
     function checkRealtimeGarbage() {
-      const v = [document.getElementById("f_40_causa_a").value, document. getElementById("f_40_causa_b").value, document.getElementById("f_40_causa_c").value, document. getElementById("f_40_causa_d").value, document.getElementById("f_40_causa_p2").value].join(" ");
+      const v = [document.getElementById("f_40_causa_a").value, document.getElementById("f_40_causa_b").value, document.getElementById("f_40_causa_c").value, document.getElementById("f_40_causa_d").value, document.getElementById("f_40_causa_p2").value].join(" ");
       let msg = null;
       for (const t of GARBAGE_TERMS) if (t.regex.test(v)) { msg = t.msg; break; }
       const alert = document.getElementById("garbageAlert");
-      if (msg) { document.getElementById("garbageText").innerText = msg; alert.classList. remove("hidden"); }
+      if (msg) { document.getElementById("garbageText").innerText = msg; alert.classList.remove("hidden"); }
       else alert.classList.add("hidden");
     }
 
@@ -1442,22 +1472,20 @@
       const v = c.validation;
       const d = c.idealData;
       // Normalizador para ignorar acentos e letras maiúsculas/minúsculas nas comparações
-      const norm = (str) => (str || '').trim().toUpperCase().normalize("NFD"). replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, ' ');
+      const norm = (str) => (str || '').trim().toUpperCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, ' ');
 
       const nome = document.getElementById("f_5_nome").value.trim().toUpperCase();
       const sexo = document.getElementById("f_10_sexo").value;
       const isFetal = document.querySelector('input[name="f_1_tipo_obito"]:checked')?.value === "fetal";
-      const assist =
-  document.querySelector('input[name="f_38_assistencia"]:checked')?.value;
-      const necropsia = document.querySelector('input[name="f_39_necropsia"]:checked')?. value;
+      const assist = document.querySelector('input[name="f_38_assistencia"]:checked')?.value;
+      const necropsia = document.querySelector('input[name="f_39_necropsia"]:checked')?.value;
       const morteMulher = document.getElementById("f_37_morte_mulher").value;
       const idadeStr = document.getElementById("f_9_idade_anos").value;
       const idade = idadeStr ? parseInt(idadeStr, 10) : null;
 
       // 1. Carimbo (47)
-      if (hasDoctorStamp && document.getElementById("f_41_nome_medico").value && document. getElementById("f_42_crm").value) {
-        items.push({title: "1. Assinatura e Carimbo (Campo 47)", status: "ok", msg:
-  "Correto. Identificação médica presente."});
+      if (hasDoctorStamp && document.getElementById("f_41_nome_medico").value && document.getElementById("f_42_crm").value) {
+        items.push({title: "1. Assinatura e Carimbo (Campo 47)", status: "ok", msg: "Correto. Identificação médica presente."});
       } else {
         score -= 20; items.push({title: "1. Assinatura/Carimbo", status: "error", msg: "Obrigatório apor carimbo médico com CRM."});
       }
@@ -1584,7 +1612,7 @@
           score -= 15;
           items.push({title: "5. Cadeia Causal Incoerente (40)", status: "error", msg: errosCadeia.join(" ")});
         } else {
-          const ultimaLinha = filledLines.length > 0 ? filledLines[filledLines.length - 1]. id : 'd';
+          const ultimaLinha = filledLines.length > 0 ? filledLines[filledLines.length - 1].id : 'd';
           items.push({title: "5. Cadeia Causal (40)", status: "ok", msg: `Sequência diagnóstica validada com causa iminente na linha 'a' e condição básica na linha '${ultimaLinha}'.`});
         }
 
@@ -1600,18 +1628,18 @@
       // 6. Identificação e Residência (Cruzamento Estrito de Dados)
       let errosIdent = [];
 
-      const tipoObito = document.querySelector('input[name="f_1_tipo_obito"]:checked')?. value || "";
+      const tipoObito = document.querySelector('input[name="f_1_tipo_obito"]:checked')?.value || "";
       if (tipoObito !== d.f_1_tipo_obito) errosIdent.push("Tipo de Óbito (Fetal/Não Fetal)");
 
       if (document.getElementById("f_2_data").value !== d.f_2_data) errosIdent.push("Data do Óbito");
       if (document.getElementById("f_2_hora").value !== d.f_2_hora) errosIdent.push("Hora do Óbito");
-      if (norm(document.getElementById("f_4_naturalidade").value) !== norm(d. f_4_naturalidade)) errosIdent.push("Naturalidade");
-      if (norm(document.getElementById("f_5_nome").value) !== norm(d.f_5_nome)) errosIdent. push("Nome do Falecido");
+      if (norm(document.getElementById("f_4_naturalidade").value) !== norm(d.f_4_naturalidade)) errosIdent.push("Naturalidade");
+      if (norm(document.getElementById("f_5_nome").value) !== norm(d.f_5_nome)) errosIdent.push("Nome do Falecido");
       if (norm(document.getElementById("f_6_nome_pai").value) !== norm(d.f_6_nome_pai)) errosIdent.push("Nome do Pai");
       if (norm(document.getElementById("f_7_nome_mae").value) !== norm(d.f_7_nome_mae)) errosIdent.push("Nome da Mãe");
 
-      if (document.getElementById("f_10_sexo").value !== d.f_10_sexo) errosIdent. push("Sexo");
-      if (document.getElementById("f_8_data_nasc").value !== d.f_8_data_nasc) errosIdent. push("Data de Nascimento");
+      if (document.getElementById("f_10_sexo").value !== d.f_10_sexo) errosIdent.push("Sexo");
+      if (document.getElementById("f_8_data_nasc").value !== d.f_8_data_nasc) errosIdent.push("Data de Nascimento");
       if (!isFetal && document.getElementById("f_9_idade_anos").value !== d.f_9_idade_anos) errosIdent.push("Idade");
 
       const raca = document.querySelector('input[name="f_11_raca"]:checked')?.value || "";
@@ -1632,7 +1660,7 @@
       // Regras IML (Caso 3)
       if (currentCaseKey === "caso3" || v.isTrauma) {
         const atestadoPor = document.getElementById("f_43_atendido").value;
-        const tipoCausaExterna = document.querySelector('input[name="f_48_tipo"]:checked')?. value;
+        const tipoCausaExterna = document.querySelector('input[name="f_48_tipo"]:checked')?.value;
 
         if (atestadoPor !== "3") {
           score -= 25; items.unshift({title: "ERRO GRAVE ÉTICO (IML)", status: "error", msg: "Morte por causa externa (acidente/violência) DEVE ser atestada pelo IML (Campo 43 = 3)."});
@@ -1650,7 +1678,7 @@
         if (!isFetal) {
           score -= 20; items.unshift({title: "ERRO BLOCO FETAL", status: "error", msg: "Este caso é um óbito fetal. Marque a opção correta no Campo 1."});
         }
-        if (!document.getElementById("f_27_idade_mae").value || !document. getElementById("f_31_gestacao").value) {
+        if (!document.getElementById("f_27_idade_mae").value || !document.getElementById("f_31_gestacao").value) {
           score -= 15; items.push({title: "Bloco IV (Mãe)", status: "error", msg: "Dados maternos e idade gestacional são obrigatórios em óbitos fetais."});
         } else {
           items.push({title: "Bloco IV (Fetal)", status: "ok", msg: "Informações maternas registradas corretamente."});
@@ -1688,8 +1716,6 @@
         badge.className = "px-3 py-1 rounded-full font-black text-xs bg-amber-900/60 text-amber-300 border border-amber-600";
         badge.innerText = "Atenção a Inconformidades";
         summaryText.innerText = "Contém falhas que comprometem a análise estatística.";
-
-
         iconScore.className = "w-9 h-9 rounded-lg flex items-center justify-center font-black text-white text-base bg-amber-600";
         iconScore.innerText = "!";
       } else {
@@ -1701,10 +1727,10 @@
       }
     }
 
-    function closeAuditModal() { document.getElementById("auditModal").classList. add("hidden"); }
+    function closeAuditModal() { document.getElementById("auditModal").classList.add("hidden"); }
 
     window.onload = () => loadCase("caso1");
   </script>
-<script>(function(){var h=document.querySelector('header.sticky');if(!h)return;function u(){document.documentElement.style.setProperty('--hdr-h',h.offsetHeight+'px');h.classList. toggle('is-scrolled',window.scrollY>8)}addEventListener('scroll',u,{passive:true}); addEventListener('resize',u);addEventListener('load',u);u()})();</script>
+  <script>(function(){var h=document.querySelector('header.sticky');if(!h)return;function u(){document.documentElement.style.setProperty('--hdr-h',h.offsetHeight+'px');h.classList.toggle('is-scrolled',window.scrollY>8)}addEventListener('scroll',u,{passive:true});addEventListener('resize',u);addEventListener('load',u);u()})();</script>
 </body>
 </html>
