@@ -318,6 +318,19 @@
       #auditModal > div { max-height: 92vh; }
     }
     @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+  /* Extensão das cores das vias (amarela/rosa) para toda a folha da D.O. — apenas layout */
+    .via-amarela, .via-amarela .bg-white, .via-amarela .bg-slate-50, .via-amarela .bg-slate-50\/50,
+    .via-amarela .bg-slate-100, .via-amarela .bg-slate-200, .via-amarela .bg-rose-50, .via-amarela .bg-rose-50\/50,
+    .via-amarela .bg-sky-50\/50, .via-amarela .bg-indigo-50\/40, .via-amarela .bg-amber-50\/70,
+    .via-amarela .med-stamp, .via-amarela .do-fnum, .via-amarela .do-block-content,
+    .via-amarela .official-document-header, .via-amarela select, .via-amarela textarea { background-color: #fefce8 !important; }
+    .via-rosa, .via-rosa .bg-white, .via-rosa .bg-slate-50, .via-rosa .bg-slate-50\/50,
+    .via-rosa .bg-slate-100, .via-rosa .bg-slate-200, .via-rosa .bg-rose-50, .via-rosa .bg-rose-50\/50,
+    .via-rosa .bg-sky-50\/50, .via-rosa .bg-indigo-50\/40, .via-rosa .bg-amber-50\/70,
+    .via-rosa .med-stamp, .via-rosa .do-fnum, .via-rosa .do-block-content,
+    .via-rosa .official-document-header, .via-rosa select, .via-rosa textarea { background-color: #fff1f2 !important; }
+    .via-amarela .do-input:focus { background-color: #fef08a !important; }
+    .via-rosa .do-input:focus { background-color: #fecdd3 !important; }
   </style>
 </head>
 <body class="min-h-screen flex flex-col text-slate-800 bg-slate-100">
